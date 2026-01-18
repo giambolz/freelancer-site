@@ -431,6 +431,27 @@ body.nav-open{ overflow: hidden; }
   border-color: rgba(183,255,74,.18);
 }
 
+/* Articles */
+.articles-grid{
+  align-items: stretch;
+}
+.article-card{
+  display: grid;
+  gap: .6rem;
+}
+.article-card .btn{
+  justify-self: flex-start;
+}
+.article-meta{
+  font-size: .85rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(183,255,74,.85);
+}
+.article-highlights{
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 /* Fleet */
 .fleet-grid{
   display: grid;
