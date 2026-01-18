@@ -1,0 +1,192 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+index 5d92023fc1b5fd3a3811d67c177cc711f5d28988..35c4ec83983030f20315519f839f5f65a665d31c 100644
+--- a/index.html
++++ b/index.html
+@@ -24,50 +24,51 @@
+ <body>
+   <a class="skip-link" href="#main">Salta al contenuto</a>
+ 
+   <!-- Sticky Header -->
+   <header class="site-header" data-sticky="true">
+     <div class="container header-inner">
+       <div class="brand">
+         <a class="logo" href="#top" aria-label="Home">
+           <span class="logo-mark" aria-hidden="true"></span>
+           <span class="logo-text">Milano Production Logistics</span>
+         </a>
+         <span class="brand-sub">Driver · Fleet · Set Support</span>
+       </div>
+ 
+       <nav class="nav" aria-label="Menu principale">
+         <button class="nav-toggle" type="button" aria-label="Apri menu" aria-controls="navMenu" aria-expanded="false" data-nav-toggle>
+           <span class="nav-toggle-lines" aria-hidden="true"></span>
+         </button>
+ 
+         <div class="nav-menu" id="navMenu" data-nav-menu>
+           <a href="#servizi" class="nav-link">Servizi</a>
+           <a href="#fleet" class="nav-link">Fleet</a>
+           <a href="#about" class="nav-link">About</a>
+           <a href="#testimonials" class="nav-link">Clienti</a>
+           <a href="#gallery" class="nav-link">Foto</a>
++          <a href="articles.html" class="nav-link">News</a>
+           <a href="#contatti" class="nav-link">Contatti</a>
+         </div>
+       </nav>
+ 
+       <div class="header-cta">
+         <a class="btn btn-ghost" href="#contatti">Richiedi preventivo</a>
+ 
+         <!-- WhatsApp CTA -->
+         <a class="btn btn-whatsapp"
+            href="https://wa.me/393516979705?text=Salve%2C%20richiedo%20preventivo%20e%20disponibilit%C3%A0%20per%20servizio%20logistico%2Fassistenza%20produzione%20a%20Milano.%20Dettagli%3A%20%5Binserire%20dettagli%5D."
+            target="_blank" rel="noopener"
+            aria-label="Contattami su WhatsApp con messaggio precompilato">
+           <span class="icon" aria-hidden="true">
+             <!-- Inline SVG WhatsApp -->
+             <svg viewBox="0 0 32 32" width="18" height="18" focusable="false" aria-hidden="true">
+               <path d="M19.11 17.53c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.5.11-.14.22-.57.71-.7.86-.13.14-.26.16-.49.05-.22-.11-.94-.35-1.8-1.12-.67-.6-1.12-1.34-1.25-1.56-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.14-.22.22-.36.07-.14.04-.27-.02-.38-.05-.11-.5-1.2-.69-1.64-.18-.43-.36-.38-.5-.39h-.43c-.14 0-.38.05-.58.27-.2.22-.76.74-.76 1.81 0 1.07.78 2.1.89 2.25.11.14 1.53 2.33 3.71 3.27.52.22.92.35 1.24.45.52.16.99.14 1.36.09.42-.06 1.3-.53 1.48-1.05.18-.52.18-.96.13-1.05-.05-.09-.2-.14-.42-.25z"/>
+               <path d="M26.6 5.41C23.89 2.7 20.29 1.2 16.46 1.2 8.58 1.2 2.18 7.6 2.18 15.48c0 2.52.66 4.98 1.9 7.15L2 30.8l8.35-2.07a14.2 14.2 0 0 0 6.11 1.39h.01c7.88 0 14.28-6.4 14.28-14.28 0-3.82-1.5-7.43-4.2-10.43zM16.46 27.7h-.01c-2.06 0-4.07-.55-5.84-1.6l-.42-.25-4.95 1.23 1.32-4.83-.27-.5a11.8 11.8 0 0 1-1.81-6.27c0-6.52 5.3-11.82 11.83-11.82 3.16 0 6.13 1.23 8.37 3.47a11.77 11.77 0 0 1 3.46 8.36c0 6.53-5.3 11.82-11.68 11.82z"/>
+             </svg>
+           </span>
+           <span>WhatsApp</span>
+         </a>
+       </div>
+     </div>
+   </header>
+ 
+@@ -77,50 +78,52 @@
+       <div class="container hero-grid">
+         <div class="hero-copy">
+           <p class="eyebrow">Milano · TV & Advertising</p>
+           <h1>Logistica e supporto produzione, senza rallentamenti.</h1>
+           <p class="lead">
+             Driver, ritiri e noleggio mezzi per set e produzioni: risposta rapida, coordinamento preciso, gestione carichi anche di alto valore.
+           </p>
+ 
+           <div class="hero-actions">
+             <a class="btn btn-primary btn-whatsapp"
+                href="https://wa.me/393516979705?text=Salve%2C%20richiedo%20preventivo%20e%20disponibilit%C3%A0%20per%20servizio%20logistico%2Fassistenza%20produzione%20a%20Milano.%20Dettagli%3A%20%5Binserire%20dettagli%5D."
+                target="_blank" rel="noopener"
+                aria-label="Contattami su WhatsApp con messaggio precompilato">
+               <span class="icon" aria-hidden="true">
+                 <svg viewBox="0 0 32 32" width="18" height="18" focusable="false" aria-hidden="true">
+                   <path d="M19.11 17.53c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.5.11-.14.22-.57.71-.7.86-.13.14-.26.16-.49.05-.22-.11-.94-.35-1.8-1.12-.67-.6-1.12-1.34-1.25-1.56-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.14-.22.22-.36.07-.14.04-.27-.02-.38-.05-.11-.5-1.2-.69-1.64-.18-.43-.36-.38-.5-.39h-.43c-.14 0-.38.05-.58.27-.2.22-.76.74-.76 1.81 0 1.07.78 2.1.89 2.25.11.14 1.53 2.33 3.71 3.27.52.22.92.35 1.24.45.52.16.99.14 1.36.09.42-.06 1.3-.53 1.48-1.05.18-.52.18-.96.13-1.05-.05-.09-.2-.14-.42-.25z"/>
+                   <path d="M26.6 5.41C23.89 2.7 20.29 1.2 16.46 1.2 8.58 1.2 2.18 7.6 2.18 15.48c0 2.52.66 4.98 1.9 7.15L2 30.8l8.35-2.07a14.2 14.2 0 0 0 6.11 1.39h.01c7.88 0 14.28-6.4 14.28-14.28 0-3.82-1.5-7.43-4.2-10.43zM16.46 27.7h-.01c-2.06 0-4.07-.55-5.84-1.6l-.42-.25-4.95 1.23 1.32-4.83-.27-.5a11.8 11.8 0 0 1-1.81-6.27c0-6.52 5.3-11.82 11.83-11.82 3.16 0 6.13 1.23 8.37 3.47a11.77 11.77 0 0 1 3.46 8.36c0 6.53-5.3 11.82-11.68 11.82z"/>
+                 </svg>
+               </span>
+               <span>Contattami su WhatsApp</span>
+             </a>
+ 
+             <button class="btn btn-secondary" type="button" data-open-modal="quoteModal">
+               Richiedi preventivo
+             </button>
++
++            <a class="btn btn-ghost" href="articles.html">News & Articoli</a>
+           </div>
+ 
+           <div class="trust-row" aria-label="Punti di fiducia">
+             <div class="pill">Risposta veloce</div>
+             <div class="pill">Milano & hinterland</div>
+             <div class="pill">English fluente</div>
+             <div class="pill">Set-ready</div>
+           </div>
+         </div>
+ 
+         <div class="hero-media">
+           <figure class="media-card">
+            <div class="img-ph ratio-16x9">
+             <img src=Van-in-montagna.jpg alt="Set pubblicitario Oakley">
+                 <p class="img-title">Oakley production on the alps</p>
+                 <p class="img-sub">Dall'oceano alle montagne </p>
+               </div>
+             </div>
+             <figcaption class="caption">(set, van 9 posti, carico scenografia, backstage)</figcaption>
+           </figure>
+ 
+           <div class="stats-grid" aria-label="Highlights operativi">
+             <div class="stat">
+               <div class="stat-num">9</div>
+               <div class="stat-label">posti van portapersone</div>
+@@ -564,50 +567,51 @@
+             <p class="form-note muted">
+               Nota: su hosting statico puro il form non invia email da solo. Collega un servizio di form (es. endpoint) quando sei pronto.
+             </p>
+           </form>
+         </div>
+       </div>
+     </section>
+ 
+     <!-- Footer -->
+     <footer class="site-footer" aria-label="Footer">
+       <div class="container footer-grid">
+         <div>
+           <a class="logo footer-logo" href="#top" aria-label="Torna su">
+             <span class="logo-mark" aria-hidden="true"></span>
+             <span class="logo-text">Milano Production Logistics</span>
+           </a>
+           <p class="muted">
+             Servizi logistici e supporto produzione per TV e ADV a Milano.
+           </p>
+         </div>
+ 
+         <div class="footer-links" aria-label="Link footer">
+           <a href="#servizi">Servizi</a>
+           <a href="#fleet">Fleet</a>
+           <a href="#about">About</a>
++          <a href="articles.html">News</a>
+           <a href="#contatti">Contatti</a>
+         </div>
+ 
+         <div class="footer-links" aria-label="Social (placeholder)">
+           <a href="#" aria-label="Instagram (placeholder)">Instagram</a>
+           <a href="#" aria-label="LinkedIn (placeholder)">LinkedIn</a>
+           <a href="#" aria-label="Vimeo (placeholder)">Vimeo</a>
+         </div>
+       </div>
+ 
+       <div class="container footer-bottom">
+         <p class="muted small">
+           © <span id="year"></span> — Tutti i diritti riservati. <span class="sep">·</span>
+           <a href="#" class="muted">Privacy</a> <span class="sep">·</span>
+           <a href="#" class="muted">Cookie</a> <span class="sep">·</span>
+           <a href="#" class="muted">Note legali</a>
+         </p>
+       </div>
+     </footer>
+   </main>
+ 
+   <!-- Modal: Quote Request -->
+   <div class="modal-backdrop" hidden></div>
+ 
+   <dialog class="modal" id="quoteModal" aria-label="Richiedi preventivo">
+@@ -776,26 +780,25 @@
+         form.addEventListener('submit', (e) => {
+           e.preventDefault();
+           const ok = validateForm(form);
+           if (ok) {
+             // Placeholder: qui collegherai un endpoint o servizio form.
+             form.reset();
+             if (modal?.open) closeModal();
+             alert('Richiesta pronta. Collega un endpoint per inviare i dati.');
+           }
+         });
+ 
+         // Live validation
+         form.querySelectorAll('input, select, textarea').forEach(f => {
+           f.addEventListener('input', () => {
+             if (f.classList.contains('has-error')) {
+               if (f.checkValidity()) setError(f, '');
+             }
+           });
+         });
+       });
+     })();
+   </script>
+ </body>
+ </html>
+ <!-- HTML END -->
+-
+ 
+EOF
+)
